@@ -1,8 +1,7 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Main from "../Main/Main";
-import Story from "../Story/Story";
-import Projects from "../Projects/Projects";
+import Main from "./Main";
+import Story from "./Story";
+import Projects from "./Projects";
 
 function App() {
   return (

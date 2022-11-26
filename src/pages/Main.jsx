@@ -1,13 +1,19 @@
-import React from "react";
-import { AppContainer } from "../components/AppContainer.style.js";
-import Header from "../components/Header.jsx";
-import HeadDrawer from "../components/Drawer.jsx";
+import {
+  AppContainer,
+  WelcomeText,
+} from "../components/MainComponents.style.jsx";
 
 function Main() {
   return (
     <>
-      <Header></Header>
-      <AppContainer>main content</AppContainer>
+      <img
+        src={require("../media/background.jpg")}
+        alt="background"
+        style={{ position: "absolute" }}
+      />
+      <AppContainer>
+        <WelcomeText>Hello There.</WelcomeText>
+      </AppContainer>
     </>
   );
 }

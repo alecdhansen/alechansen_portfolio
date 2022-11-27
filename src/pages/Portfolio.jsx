@@ -9,15 +9,24 @@ import {
   TechButton,
   Tag,
   TechButtonHouse,
+  PortfolioImage,
 } from "../components/Portfolio.style";
 import { GoPrimitiveDot } from "react-icons/go";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function Portfolio() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <PortfolioSection>
       <Info>
         <BackgroundText>PORTFOLIO PORTFOLIO</BackgroundText>
-        <PortfolioTitle>Portfolio</PortfolioTitle>
+        <PortfolioTitle data-aos="fade-right">Portfolio</PortfolioTitle>
         <PortfolioText marginTop="30px">
           Here are three projects I built during my time at Carolina Code
           School. I'm always building, wait until you see what I add next!
@@ -72,7 +81,19 @@ function Portfolio() {
         </TechButtonHouse>
       </Info>
       <PortfolioPieces>
-        <PortfolioTitle>Portfolio</PortfolioTitle>
+        <PortfolioImage
+          src={require("../media/braggem_shot1.png")}
+          zIndex="20"
+          marginLeft="200px"
+          marginTop="40px"
+          data-aos="fade-right"
+        />
+        <PortfolioImage
+          src={require("../media/braggem_shot2.png")}
+          zIndex="10"
+          marginTop="80px"
+          data-aos="fade-left"
+        />
       </PortfolioPieces>
     </PortfolioSection>
   );

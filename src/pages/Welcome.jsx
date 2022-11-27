@@ -6,8 +6,15 @@ import {
   ProfileContainer,
   TextContainer,
 } from "../components/Welcome.style.jsx";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Welcome() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <SectionContainer>

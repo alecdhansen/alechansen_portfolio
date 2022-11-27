@@ -24,6 +24,8 @@ export const PortfolioTitle = styled.h2`
 
 export const PortfolioPieces = styled.div`
   width: 50%;
+  display: flex;
+  justify-content: center;
 `;
 
 export const BackgroundText = styled.p`
@@ -43,7 +45,7 @@ export const PortfolioText = styled.p`
 `;
 
 export const ComputerImage = styled.img`
-  width: 85%;
+  width: 100%;
   scale: 70%;
 `;
 
@@ -70,8 +72,26 @@ export const TechButton = styled.button`
 `;
 
 export const TechButtonHouse = styled.div`
-  width: 85%;
+  width: 75%;
   display: grid;
   padding: 10px 0px;
   grid-template-columns: 1fr 1fr 1fr;
+`;
+
+export const PortfolioImage = styled.img`
+  width: 350px;
+  position: absolute;
+  border-radius: 10px;
+  z-index: ${(props) => props.zIndex};
+  margin-left: ${(props) => props.marginLeft};
+  margin-top: ${(props) => props.marginTop};
+  @keyframes fadein {
+    0% {
+      scale: 1%;
+    }
+    100% {
+      scale: 100%;
+    }
+  }
+  /* animation: fadein 1.5s; */
 `;

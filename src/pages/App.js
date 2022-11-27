@@ -1,15 +1,15 @@
-import { Routes, Route } from "react-router-dom";
-import Main from "./Main";
-import Story from "./Story";
-import Projects from "./Projects";
+import { BackgroundColor } from "../components/Welcome.style";
+import Welcome from "./Welcome";
+import Portfolio from "./Portfolio";
+// import Story from "./Story";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/story" element={<Story />} />
-    </Routes>
+    <>
+      <BackgroundColor />
+      <Welcome />
+      <Portfolio />
+    </>
   );
 }
 

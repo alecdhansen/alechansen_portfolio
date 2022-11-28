@@ -5,7 +5,6 @@ import {
   PortfolioPieces,
   BackgroundText,
   PortfolioText,
-  ComputerImage,
   TechButton,
   Tag,
   TechButtonHouse,
@@ -33,7 +32,6 @@ function Portfolio() {
           Here are three projects I built during my time at Carolina Code
           School. I'm always building, wait until you see what I add next!
         </PortfolioText>
-        <ComputerImage src={require("../media/computer.png")} />
         <PortfolioText marginTop="0px" width="85%">
           All of these projects are built using the following technologies:
         </PortfolioText>
@@ -83,30 +81,25 @@ function Portfolio() {
         </TechButtonHouse>
       </Info>
       <PortfolioPieces>
-        <PortfolioImage
-          src={require("../media/braggem_shot1.png")}
-          zIndex="20"
-          marginLeft="200px"
-          marginTop="40px"
-          data-aos="fade-right"
-          position="relative"
-        />
-        <PortfolioImage
-          src={require("../media/braggem_shot2.png")}
-          zIndex="10"
-          marginTop="0px"
-          marginRight="250px"
-          data-aos="fade-left"
-          position="absolute"
-        />
-        <PortfolioItemInfo>
+        <PortfolioItemInfo alignItems="flex-start">
           <PortfolioTitle>Braggem</PortfolioTitle>
-          <PortfolioText width="95%">
+          <PortfolioText>
             Braggem was built to provide users an exciting experience while
             following the NBA season. Predict game winners, view leaderboard,
             challenge other users, and customize your profile while showcasing
             your game-winner picking skills.
           </PortfolioText>
+          <Tag href="https://braggem.herokuapp.com/">
+            <TechButton fontColor="#254D79" color="#489ffb">
+              View Live
+            </TechButton>
+          </Tag>
+        </PortfolioItemInfo>
+        <PortfolioItemInfo alignItems="center">
+          <PortfolioImage
+            src={require("../media/braggem.png")}
+            data-aos="fade-left"
+          />
         </PortfolioItemInfo>
       </PortfolioPieces>
     </PortfolioSection>

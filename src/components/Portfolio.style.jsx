@@ -4,13 +4,13 @@ export const PortfolioSection = styled.section`
   width: 100%;
   padding: 0px 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
   margin-top: 100px;
 `;
 
 export const Info = styled.div`
-  width: 50%;
+  width: 100%;
 `;
 
 export const PortfolioHeader = styled.h2`
@@ -22,13 +22,12 @@ export const PortfolioHeader = styled.h2`
 `;
 
 export const PortfolioPieces = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
   position: relative;
-  overflow: scroll;
+  margin-top: 80px;
 `;
 
 export const BackgroundText = styled.p`
@@ -43,13 +42,8 @@ export const BackgroundText = styled.p`
 export const PortfolioText = styled.p`
   font-size: 20px;
   color: #a9b7ff;
-  width: ${(props) => props.width};
-  margin-top: ${(props) => props.marginTop};
-`;
-
-export const ComputerImage = styled.img`
   width: 100%;
-  scale: 70%;
+  margin-top: ${(props) => props.marginTop};
 `;
 
 export const Tag = styled.a`
@@ -75,20 +69,14 @@ export const TechButton = styled.button`
 `;
 
 export const TechButtonHouse = styled.div`
-  width: 75%;
-  display: grid;
-  padding: 10px 0px;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 `;
 
 export const PortfolioImage = styled.img`
-  width: 350px;
-  position: ${(props) => props.position};
-  border-radius: 10px;
-  z-index: ${(props) => props.zIndex};
-  margin-left: ${(props) => props.marginLeft};
-  margin-right: ${(props) => props.marginRight};
-  margin-top: ${(props) => props.marginTop};
+  width: 100%;
 `;
 
 export const PortfolioTitle = styled.h2`
@@ -101,8 +89,7 @@ export const PortfolioTitle = styled.h2`
 export const PortfolioItemInfo = styled.div`
   position: relative;
   display: flex;
+  align-items: ${(props) => props.alignItems};
   flex-direction: column;
-  margin-top: 30px;
-  padding-left: 30px;
-  width: 100%;
+  width: 50%;
 `;

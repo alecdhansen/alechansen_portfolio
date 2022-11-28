@@ -45,7 +45,8 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 465px;
+  min-width: 50%;
+  padding-left: 30px;
 `;
 
 export const WelcomeText = styled.p`
@@ -57,7 +58,7 @@ export const WelcomeText = styled.p`
 
 export const AlecIMG = styled.img`
   clip-path: polygon(28% 0, 100% 0%, 78% 100%, 0% 100%);
-  width: 600px;
+  width: 42%;
   @keyframes createBox {
     from {
       margin-left: 1000px;

@@ -1,6 +1,6 @@
 import {
   PortfolioSection,
-  PortfolioTitle,
+  PortfolioHeader,
   Info,
   PortfolioPieces,
   BackgroundText,
@@ -10,6 +10,8 @@ import {
   Tag,
   TechButtonHouse,
   PortfolioImage,
+  PortfolioTitle,
+  PortfolioItemInfo,
 } from "../components/Portfolio.style";
 import { GoPrimitiveDot } from "react-icons/go";
 
@@ -26,13 +28,13 @@ function Portfolio() {
     <PortfolioSection>
       <Info>
         <BackgroundText>PORTFOLIO PORTFOLIO</BackgroundText>
-        <PortfolioTitle data-aos="fade-right">Portfolio</PortfolioTitle>
-        <PortfolioText marginTop="30px">
+        <PortfolioHeader data-aos="fade-right">Portfolio</PortfolioHeader>
+        <PortfolioText marginTop="30px" width="85%">
           Here are three projects I built during my time at Carolina Code
           School. I'm always building, wait until you see what I add next!
         </PortfolioText>
         <ComputerImage src={require("../media/computer.png")} />
-        <PortfolioText marginTop="0px">
+        <PortfolioText marginTop="0px" width="85%">
           All of these projects are built using the following technologies:
         </PortfolioText>
         <TechButtonHouse>
@@ -87,13 +89,25 @@ function Portfolio() {
           marginLeft="200px"
           marginTop="40px"
           data-aos="fade-right"
+          position="relative"
         />
         <PortfolioImage
           src={require("../media/braggem_shot2.png")}
           zIndex="10"
-          marginTop="80px"
+          marginTop="0px"
+          marginRight="250px"
           data-aos="fade-left"
+          position="absolute"
         />
+        <PortfolioItemInfo>
+          <PortfolioTitle>Braggem</PortfolioTitle>
+          <PortfolioText width="95%">
+            Braggem was built to provide users an exciting experience while
+            following the NBA season. Predict game winners, view leaderboard,
+            challenge other users, and customize your profile while showcasing
+            your game-winner picking skills.
+          </PortfolioText>
+        </PortfolioItemInfo>
       </PortfolioPieces>
     </PortfolioSection>
   );

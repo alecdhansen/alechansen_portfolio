@@ -25,9 +25,15 @@ export const PortfolioPieces = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: relative;
   margin-top: 80px;
+`;
+
+export const PortfolioPiece = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const BackgroundText = styled.p`
@@ -77,6 +83,7 @@ export const TechButtonHouse = styled.div`
 
 export const PortfolioImage = styled.img`
   width: 100%;
+  scale: ${(props) => props.scale};
 `;
 
 export const PortfolioTitle = styled.h2`

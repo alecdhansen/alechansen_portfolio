@@ -84,6 +84,7 @@ export const TechButtonHouse = styled.div`
 export const PortfolioImage = styled.img`
   width: 100%;
   scale: ${(props) => props.scale};
+  margin-left: ${(props) => props.marginLeft};
 `;
 
 export const PortfolioTitle = styled.h2`

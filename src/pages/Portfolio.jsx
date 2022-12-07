@@ -13,7 +13,6 @@ import {
   PortfolioItemInfo,
   PortfolioPiece,
 } from "../components/Portfolio.style";
-import { GoPrimitiveDot } from "react-icons/go";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
